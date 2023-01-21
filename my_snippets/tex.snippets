@@ -1,0 +1,71 @@
+snippet use "usepackage" b
+\usepackage{${1:package}}
+endsnippet
+
+snippet eqa "equation environment" b
+\begin{equation}\label{$1}
+	$2
+\end{equation}
+endsnippet
+
+snippet ali "align environment" b
+\begin{align}\label{$1}
+$2
+\end{align}
+endsnippet
+
+snippet figure "figure environment" b
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=$1,trim=0 0 0 0,clip]{$2}
+\caption{$3}
+\label{$4}
+\end{figure}
+endsnippet
+
+snippet sfig "star figure environment" b
+\begin{figure*}[!t]
+\centering
+\includegraphics[scale=$1,trim=0 0 0 0,clip]{$2}
+\caption{$3}
+\label{$4}
+\end{figure*}
+endsnippet
+
+
+snippet alg "algorithm environment" b
+\begin{algorithm}[H]
+\caption{$1}\label{$2}
+\begin{algorithmic}
+\STATE
+\STATE {\textsc{INPUT}}$: $3$
+\STATE {\textsc{OUTPUT}}$: $4$
+\STATE \hspace{0.5cm}$5
+\end{algorithmic}
+\label{$6}
+\end{algorithm}
+endsnippet
+
+snippet figs "figure !s!" b
+\begin{figure}[H]
+\caption{$1}
+\label{$2}
+\end{figure}
+endsnippet
+
+
+snippet sfigs "star figure !s!" b
+\begin{figure*}[H]
+\caption{$1}
+\label{$2}
+\end{figure*}
+endsnippet
+
+snippet subfig "subfig" b
+\subfloat[]{
+	\begin{minipage}[c]{$1\linewidth}
+	\centering
+	\includegraphics[scale=$2, trim=0 0 0 0, clip]{$3}
+	\end{minipage}
+}
+endsnippet
